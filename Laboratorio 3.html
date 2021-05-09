@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>laboratorio #3</title>
+    <link rel="stylesheet" href="laboratorio 3.css">
+</head>
+<body>
+    
+    <h1 class="TITULO_PAL">LABORATORIO #3</h1>
+
+    <form id="palindromo">
+        <h2 class="des_pal">1: Palíndromo doble base</h2>
+            <blockquote>
+                <span>Ingrese un número para comprobar si es palíndromo </br></br></span>
+                <input id="NUMBER-input" type="text" name="numero" onkeypress="return solonumeros(event)" onpaste="return false" style="border-color:blue" placeholder="ingrese un número" required> </input>
+                <button id="NUMBER-btn" type="submit" >VERIFICAR</button>
+            </blockquote>
+    </form>
+
+    <form id="cadena">
+        <h2 class="des_pal">2: Contador de cadenas</h2>
+            <blockquote>
+                <span> Inserta una palabra para comprobar sus caracteres </br></br></span>
+                <input id="WORD-input" type="text" name="cadenas" onpaste="return false" style="border-color:blue" placeholder="ingrese una palabra" required> </input>
+                <button id="WORD-btn" type="submit" >VERIFICAR</button>
+            </blockquote>
+    </form>
+
+    <form id="bisiesto">
+        <h2 class="des_pal">3: Identificar año bisiesto</h2>
+            <blockquote>
+                <span> Inserta un año para comprobar si es bisiesto </br></br></span>
+                <input id="YEAR-input" type="text" name="años" onkeypress="return solonumeros(event)" onpaste="return false" style="border-color:blue" placeholder="ingrese un año" minlength="4" maxlength="4" required> </input>
+                <button id="YEAR-btn" type="submit" >VERIFICAR</button>
+            </blockquote>
+    </form>
+
+    <form id="primos">
+        <h2 class="des_pal">4: Sumatoria numeros primos</h2>
+            <blockquote>
+                <span> Inserta un numero para retornar la sumatoria de numeros primos</br></br></span>
+                <input id="PRIMO-input" type="number" name="sumaPrimo" onkeypress="return solonumeros(event)" onpaste="return false" style="border-color:blue" placeholder="ingrese un número" minlength="1" maxlength="7" min="1" max="1000000" required> </input>
+                <button id="PRIMO-btn" type="submit" >VERIFICAR</button>
+            </blockquote>
+    </form>
+
+<script src="laboratorio 3.js"> 
+</script>
+
+</body>
+</html>
+
